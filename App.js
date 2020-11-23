@@ -44,7 +44,7 @@ export default function App() {
       <View style={{ ...getInnerBoxDimensions(), backgroundColor: '#DCE6F9', borderRadius: 20 }}>
         <WavyPath customStyles={{ width: getInnerBoxDimensions().width, position: 'absolute', }} />
         <View style={{ justifyContent: 'space-between', flex: 1 }}>
-          <View style={{ flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', paddingTop: 50 }}>
+          <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center', paddingTop: 50 }}>
             <View style={styles.smallBox}></View><Text style={styles.text_name}>Name </Text><View style={styles.smallBox}></View></View>
         </View>
         <View style={{ justifyContent: 'center', alignItems: 'center', paddingBottom: 50 }}>
@@ -66,16 +66,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: "600",
     alignItems: 'center',
+    fontFamily: 'Roboto'
   },
   text_balance: {
     fontSize: 20,
     fontWeight: "600",
+    fontFamily: 'Roboto'
 
   },
   smallBox: {
     backgroundColor: '#0B090A',
-    height: 50,
-    width: 50,
+    height: 40,
+    width: 40,
     borderRadius: 5,
     shadowOpacity: 0.25,
     shadowRadius: 5,
